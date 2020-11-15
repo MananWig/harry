@@ -2,6 +2,10 @@ html, body {
   margin: 0;
   padding: 0;
 }
-canvas {
-  display: block;
+canvas{
+
+  margin-right: 25%;
+
+  border: 6px solid rgb(69, 130, 209);
 }
+

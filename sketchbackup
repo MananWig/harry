@@ -16,6 +16,9 @@ function preload(){
   minionImg = loadImage("Images/minion.png");
   gameoverImg=loadImage("Images/gameOver.jpg");
 
+
+
+  
   
 }
 
@@ -26,17 +29,14 @@ function setup() {
   spriteGroup= new Group();
   stickGroup = new Group();
 
-  var widthRatio = 1500/windowWidth;
-  var heightRatio = 1080/windowHeight;
-
   edges = createEdgeSprites();
   
-  bedroom1=createSprite(50*widthRatio, 100, 10, 200);
-  bedroom2=createSprite(145*widthRatio,200,200*widthRatio,10);
-  bedroom3=createSprite(250*widthRatio,200,10,100);
-  bedroom4=createSprite(450*widthRatio,100,10,200);
-  bedroom5=createSprite(420*widthRatio,200,70*widthRatio,10);
-  bedroom6=createSprite(380*widthRatio,200,10,100);
+  bedroom1=createSprite(50, 100, 10, 200);
+  bedroom2=createSprite(145,200,200,10);
+  bedroom3=createSprite(250,200,10,100);
+  bedroom4=createSprite(450,100,10,200);
+  bedroom5=createSprite(420,200,70,10);
+  bedroom6=createSprite(380,200,10,100);
 
   spriteGroup.add(bedroom1);
   spriteGroup.add(bedroom2);
@@ -47,12 +47,12 @@ function setup() {
 
 
 
-  mainRoom1=createSprite(600*widthRatio,200,10,100*heightRatio);
-  mainRoom2=createSprite(750*widthRatio,200,300*widthRatio,10);
-  mainRoom3=createSprite(900*widthRatio,295,10,200*heightRatio);
-  mainRoom4=createSprite(945*widthRatio,400,100*widthRatio,10);
-  mainRoom5=createSprite(1250*widthRatio,400,300*widthRatio,10);
-  mainRoom6=createSprite(1400*widthRatio,205,10,400*widthRatio,10);
+  mainRoom1=createSprite(600,200,10,100);
+  mainRoom2=createSprite(750,200,300,10);
+  mainRoom3=createSprite(900,295,10,200);
+  mainRoom4=createSprite(945,400,100,10);
+  mainRoom5=createSprite(1250,400,300,10);
+  mainRoom6=createSprite(1400,205,10,400,10);
 
 
   spriteGroup.add(mainRoom1);
@@ -66,16 +66,16 @@ function setup() {
 
 
 
-  Room1 = createSprite(1150*widthRatio,500*heightRatio,600*widthRatio,10);
-  Room2 = createSprite(850*widthRatio,595*heightRatio,10,200*heightRatio);
-  Room3 = createSprite(850*widthRatio,820*heightRatio,10,30*heightRatio);
-  Room4 = createSprite(1145*widthRatio,840*heightRatio,600*widthRatio,10);
-  Room5 = createSprite(1445*widthRatio,670*heightRatio,10,350*heightRatio);
+  Room1 = createSprite(1150,500,600,10);
+  Room2 = createSprite(850,595,10,200);
+  Room3 = createSprite(850,820,10,30);
+  Room4 = createSprite(1145,840,600,10);
+  Room5 = createSprite(1445,670,10,350);
 
 
-  Room6 = createSprite(50*widthRatio,600*heightRatio,10,300*heightRatio)
-  Room7 = createSprite(250*widthRatio,455*heightRatio,400*widthRatio,10);
-  Room8 = createSprite(450*widthRatio,600*heightRatio,10,300*heightRatio);
+  Room6 = createSprite(50,600,10,300)
+  Room7 = createSprite(250,455,400,10);
+  Room8 = createSprite(450,600,10,300);
 
 
   spriteGroup.add(Room1);
@@ -88,7 +88,7 @@ function setup() {
   spriteGroup.add(Room8);
 
 
-  harry = createSprite(100*widthRatio,120*heightRatio);
+  harry = createSprite(100,120);
   harry.addImage("harry",harryStanding)
   harry.scale=0.2;
   
@@ -100,13 +100,13 @@ function setup() {
 
   spriteGroup.add(voldemort);
 
-  minion1 = createSprite(1000*widthRatio,300*heightRatio);
+  minion1 = createSprite(1000,300);
   minion1.addImage("minion",minionImg);
   minion1.scale=0.03;
 
   spriteGroup.add(minion1);
 
-  minion2 = createSprite(200*widthRatio,500*heightRatio);
+  minion2 = createSprite(200,500);
   minion2.addImage("minion",minionImg);
   minion2.scale=0.03;
   spriteGroup.add(minion2);
