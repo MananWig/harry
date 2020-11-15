@@ -26,8 +26,8 @@ function setup() {
   spriteGroup= new Group();
   stickGroup = new Group();
 
-  var widthRatio = 1500/windowWidth;
-  var heightRatio = 1080/windowHeight;
+  var widthRatio = windowWidth/1500;
+  var heightRatio = windowHeight/1080;
 
   edges = createEdgeSprites();
   
